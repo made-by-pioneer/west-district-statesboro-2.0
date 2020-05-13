@@ -2,17 +2,17 @@
 
 <style>
 .hero-section {
-    background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/west-district-in-statesboro_ayhhsy.jpg");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.hero.background_img }}");
 }
 </style>
 
 <div class="flex flex-wrap bg-cover bg-bottom bg-no-repeat -mt-40 py-48 hero-section">
     <div class="flex flex-wrap w-5/6 md:w-2/3 max-w-5xl mx-auto">
         <div class="w-full lg:w-7/12">
-                <h1 class='{{ partial "gCSS/type/heading.txt"}} text-white pb-4'>Be a part of what's rising in downtown Statesboro</h1>
-                <p class='{{ partial "gCSS/type/paragraph.txt"}} text-white pb-8'>With restaurants, office space, lofts, parking, and an open yard for monthly activites, West District is primed to make downtown Statesboro the place you'll want to live, work, and play.</p>
-                <a href="#contact-west" class='{{ partial "gCSS/button/default.txt"}} scroll'>
-                    Let's go west
+                <h1 class='{{ partial "gCSS/type/heading.txt"}} text-white pb-4'>{{ .Params.hero.title }}</h1>
+                <p class='{{ partial "gCSS/type/paragraph.txt"}} text-white pb-8'>{{ .Params.hero.paragraph_text | safeHTML }}</p>
+                <a href="{{ .Params.hero.button_link }}" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+                    {{ .Params.hero.button_text }}
                 </a>
         </div>
     </div>
@@ -21,34 +21,34 @@
 <div id="history-of-west" class="flex flex-wrap w-5/6 md:w-2/3 max-w-6xl mx-auto pt-24 pb-20">
     <style>
         .history-of-west-district {
-            background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/history-of-west-district-statesboro_ryozyd.jpg")
+            background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.history_of_west.img }}")
         }
     </style>
     <div class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 history-of-west-district">
         
     </div>
     <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pl-12">
-        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>BECOMING A PART OF WEST</h6>
-        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Experience West</h2>
-        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>Everything is an experience when you come to West. We are inspired by the rich history this site has to offer. We plan to continue to make history by bringing the community together at West District. In doing so, we plan on having multiple events to create an exciting and contagious atmosphere. The unique architecture of the buildings and Water Tower create an exciting environment for your future work, live, play environment.</p>
-        <a href="#contact-west" class='{{ partial "gCSS/button/default.txt"}} scroll'>
-            Tell me more
+        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.history_of_west.subtitle }}</h6>
+        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.history_of_west.title }}</h2>
+        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.history_of_west.paragraph_text | safeHTML }}</p>
+        <a href="{{ .Params.history_of_west.button_link }}" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+            {{ .Params.history_of_west.button_text }}
         </a>
     </div>
 </div>
 
 <div id="unique-office-spaces" class="flex flex-wrap flex-col-reverse md:flex-row w-5/6 md:w-2/3 max-w-6xl mx-auto pt-20 pb-24 md:pb-0">
     <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pr-12">
-        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>PURCHASE OR LEASE A SPACE</h6>
-        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Unique Workspace</h2>
-        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>This site will offer modern office spaces with parking as well as commercial sites to serve those businesses. We have ready-to-build pad sites, office space for lease, and lofts for lease. Businesses locating to West District will experience more than a modern office environment surrounded by historic charm.</p>
-        <a href="#contact-west" class='{{ partial "gCSS/button/default.txt"}} scroll'>
-            Tell me more
+        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.office_space_section.subtitle }}</h6>
+        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.office_space_section.title }}</h2>
+        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.office_space_section.paragraph_text | safeHTML }}</p>
+        <a href="{{ .Params.office_space_section.button_link }}" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+            {{ .Params.office_space_section.button_text }}
         </a>
     </div>
     <style>
         .unique-office-spaces {
-            background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/modern-office-spaces-in-downtown-statesboro_znzdzi.jpg")
+            background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.office_space_section.img }}")
         }
     </style>
     <div class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 unique-office-spaces">
@@ -59,18 +59,18 @@
 <div id="downtown-loft-living" class="flex flex-wrap w-5/6 md:w-2/3 max-w-6xl mx-auto pt-20 pb-24">
     <style>
         .downtown-loft-living {
-            background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/Ranco_West_District_Web.max-1200x675_fcsap7.jpg")
+            background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.loft_living_section.img }}")
         }
     </style>
     <div class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 downtown-loft-living">
         
     </div>
     <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pl-12">
-        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>DOWNTOWN LOFT LIVING</h6>
-        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Live</h2>
-        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>Living in The Lofts at West will put you in walking distance to local boutiques, dining, weekend farmer’s markets, and activities. The Lofts at West will feature open floor plans with reclaimed wooden beams and brick walls with all of the modern amenities. Each loft will have its own personality with double door balconies and private entrances.</p>
-        <a href="#contact-west" class='{{ partial "gCSS/button/default.txt"}} scroll'>
-            Tell me more
+        <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.loft_living_section.subtitle }}</h6>
+        <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.loft_living_section.title }}</h2>
+        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.loft_living_section.paragraph_text | safeHTML }}</p>
+        <a href="{{ .Params.loft_living_section.button_link }}" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+            {{ .Params.loft_living_section.button_text }}
         </a>
     </div>
 </div>
@@ -78,16 +78,16 @@
 <div class="w-full bg-color-e6e6e6">
     <div id="revitalizing-west" class="flex flex-wrap flex-col-reverse md:flex-row w-5/6 md:w-2/3 max-w-6xl mx-auto pt-20 pb-24">
         <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pr-12">
-            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>PRESERVING HISTORY</h6>
-            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Revitalizing West</h2>
-            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>Our location is more than a building. This location is embedded with memory and history. In 1927, Cecil W. Brannen was the head of the Statesboro Chamber of Commerce. His goal was to promote the growth of tobacco. In 1928, two warehouses were built on South College Street. The tobacco warehouse sales grew rapidly each year making history. Although there are different times and cultures between the Tobacco plant and West District. One has already created so much culture and history and now West District plans to do the same. Today, that history and architecture is being revitalized to become a new work, live, and play development. Our hopes are to keep the history alive when you experience West.</p>
-            <a href="#contact-west" class='{{ partial "gCSS/button/default.txt"}} scroll'>
-                Tell me more
+            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.revitalizing_section.subtitle }}</h6>
+            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.revitalizing_section.title }}</h2>
+            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.revitalizing_section.paragraph_text | safeHTML }}</p>
+            <a href="{{ .Params.revitalizing_section.button_link }}" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+                {{ .Params.revitalizing_section.button_text }}
             </a>
         </div>
         <style>
             .revitalizing-west {
-                background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/statesboro-history-map_epcrsg.jpg")
+                background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.revitalizing_section.img }}")
             }
         </style>
         <div class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 revitalizing-west">
@@ -98,7 +98,7 @@
 
 <style>
     .contact-west {
-        background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/v1588734781/West%20District%20Statesboro/contact-west_qxkswn.png")
+        background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.contact_section.background_img }}")
     }
 </style>
 
@@ -109,16 +109,16 @@
                 <h6 class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>Enable Javascript to see a map to the West District Statesboro</h6>
             </noscript>
         <iframe class="google-map pb-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.9675622993!2d-81.78960548583824!3d32.44680300805819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fa40a8fa50439f%3A0x51654157afb5085b!2s91+S+College+St%2C+Statesboro%2C+GA+30458!5e0!3m2!1sen!2sus!4v1538203040929" width="100%" height="347" frameborder="0" style="border:0" allowfullscreen></iframe> 
-        <h6 class='{{ partial "gCSS/type/subtitle.txt"}} pb-1'>GET DIRECTIONS</h6>
+        <h6 class='{{ partial "gCSS/type/subtitle.txt"}} pb-1'>{{ .Params.contact_section.map_area.title }}</h6>
         <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>{{ .Site.Data.global_data.address.street }}, {{ .Site.Data.global_data.address.city }}, {{ .Site.Data.global_data.address.state }}. {{ .Site.Data.global_data.address.zip }}</p>
-        <h6 class='{{ partial "gCSS/type/subtitle.txt"}} pb-1'>CALL OUR RENTAL DEVELOPMENT TEAM</h6>
-        <p class='{{ partial "gCSS/type/paragraph.txt"}}'>Michael Whitfield | 912.531.7061 - 912.764.6249</p>
-        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>Everett Kennedy | 912.682.9045 - 912.764.6249</p>
+        <h6 class='{{ partial "gCSS/type/subtitle.txt"}} pb-1'>{{ .Params.contact_section.contact_persons.title }}</h6>
+        <p class='{{ partial "gCSS/type/paragraph.txt"}}'>{{ .Params.contact_section.contact_persons.michael_whitfield.name }} | {{ delimit .Params.contact_section.contact_persons.michael_whitfield.phone_numbers " - " }}</p>
+        <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.contact_section.contact_persons.everett_kennedy.name }} | {{ delimit .Params.contact_section.contact_persons.everett_kennedy.phone_numbers " - " }}</p>
         </div>
         <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pl-12">
-            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>WE’D LOVE TO HELP</h6>
-            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Need more information?</h2>
-            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>Whether you’re looking for information on our ready-to-build pad sites, office space for lease, living downtown in one of our lofts, or more information on investment opportunities, we’d love to hear from you!</p>
+            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.contact_section.subtitle }}</h6>
+            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.contact_section.title }}</h2>
+            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.contact_section.paragraph_text | safeHTML }}</p>
             <form class="flex flex-wrap" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="contact-form" method="POST" netlify>
                 <input type="hidden" name="subject" value="New Submission from Website" />
                 <div class="w-full">
@@ -156,11 +156,11 @@
 <div class="w-full bg-color-e6e6e6">
     <div id="follow-west-on-instagram" class="flex flex-wrap flex-col-reverse md:flex-row w-5/6 md:w-2/3 max-w-6xl mx-auto pt-20 pb-40">
         <div class="w-full md:w-1/2 pt-24 md:pt-0 md:pr-12">
-            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>FOLLOW WEST</h6>
-            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>Visit Us on Instagram</h2>
-            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>To stay up to date on everything going on at the West District, follow us on Instagram. There’s more things coming soon!</p>
+            <h6 class='{{ partial "gCSS/type/subtitle.txt"}}'>{{ .Params.instagram_section.subtitle }}</h6>
+            <h2 class='{{ partial "gCSS/type/heading.txt"}} pb-5'>{{ .Params.instagram_section.title }}</h2>
+            <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-5'>{{ .Params.instagram_section.paragraph_text | safeHTML }}</p>
             <a href="{{ .Site.Data.global_data.social.insta }}" target="_blank" class='{{ partial "gCSS/button/default.txt"}}'>
-                Follow us
+                {{ .Params.instagram_section.button_text }}
             </a>
         </div>
         <noscript>
