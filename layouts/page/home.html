@@ -107,7 +107,7 @@
         <div class="w-full md:w-1/2 bg-contain bg-no-repeat md:pb-48 map-to-west-district">
         <iframe class="google-map pb-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.9675622993!2d-81.78960548583824!3d32.44680300805819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fa40a8fa50439f%3A0x51654157afb5085b!2s91+S+College+St%2C+Statesboro%2C+GA+30458!5e0!3m2!1sen!2sus!4v1538203040929" width="100%" height="347" frameborder="0" style="border:0" allowfullscreen></iframe> 
         <h6 class='{{ partial "gCSS/type/subtitle"}} pb-1'>GET DIRECTIONS</h6>
-        <p class='{{ partial "gCSS/type/paragraph"}} pb-8'>91 South College Street, Statesboro, Ga. 30458</p>
+        <p class='{{ partial "gCSS/type/paragraph"}} pb-8'>{{ .Site.Data.global_data.address.street }}, {{ .Site.Data.global_data.address.city }}, {{ .Site.Data.global_data.address.state }}. {{ .Site.Data.global_data.address.zip }}</p>
         <h6 class='{{ partial "gCSS/type/subtitle"}} pb-1'>CALL OUR RENTAL DEVELOPMENT TEAM</h6>
         <p class='{{ partial "gCSS/type/paragraph"}}'>Michael Whitfield | 912.531.7061 - 912.764.6249</p>
         <p class='{{ partial "gCSS/type/paragraph"}} pb-5'>Everett Kennedy | 912.682.9045 - 912.764.6249</p>
