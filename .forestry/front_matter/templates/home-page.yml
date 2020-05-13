@@ -1,0 +1,201 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: url
+  label: url
+- type: text
+  name: title
+  label: title
+- type: text
+  name: page_status
+  label: page_status
+- type: text
+  name: publish_image
+  label: publish_image
+- type: text
+  name: meta_description
+  label: meta_description
+- type: field_group
+  name: hero
+  label: hero
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: background_img
+    label: background_img
+- type: field_group
+  name: history_of_west
+  label: history_of_west
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: office_space_section
+  label: office_space_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: loft_living_section
+  label: loft_living_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: revitalizing_section
+  label: revitalizing_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: img
+    label: img
+- type: field_group
+  name: contact_section
+  label: contact_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: file
+    name: background_img
+    label: background_img
+  - type: field_group
+    name: map_area
+    label: map_area
+    fields:
+    - type: text
+      name: title
+      label: title
+  - type: field_group
+    name: contact_persons
+    label: contact_persons
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: field_group
+      name: michael_whitfield
+      label: michael_whitfield
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: list
+        name: phone_numbers
+        label: phone_numbers
+    - type: field_group
+      name: everett_kennedy
+      label: everett_kennedy
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: list
+        name: phone_numbers
+        label: phone_numbers
+- type: field_group
+  name: instagram_section
+  label: instagram_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: paragraph_text
+    label: paragraph_text
+  - type: text
+    name: button_text
+    label: button_text
