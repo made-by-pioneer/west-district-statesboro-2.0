@@ -9,11 +9,6 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: content/pages
-  label: Pages
-  create: all
-  match: "**/*"
 upload_dir: West District Statesboro
 public_path: ''
 front_matter_path: ''
