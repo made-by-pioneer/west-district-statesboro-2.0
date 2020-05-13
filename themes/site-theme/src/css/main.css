@@ -21,10 +21,6 @@ body {
   
 }
 
-a {
-  transition: .2s;
-}
-
 .mobile-menu-toggle {margin-top: 0px !important;}
 
 .mobile-menu {

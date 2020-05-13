@@ -1,6 +1,9 @@
 User-agent: *
 
-Disallow: /
+Disallow:
+
+/thank-you/
 
 
-Sitemap: https://gz-default.netlify.com/sitemapindex.xml
+
+Sitemap: https://westdistrictstatesboro.com/sitemapindex.xml
