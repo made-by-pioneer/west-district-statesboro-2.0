@@ -1,0 +1,81 @@
+baseURL = "https://gz-default.netlify.com/"
+languageCode = "en-us"
+theme = "site-theme"
+title = "West District Statesboro"
+enableRobotsTXT = true
+
+[[menu.desktop]]
+    identifier = "Opportunities"
+    name = "Opportunities"
+    url = "#history-of-west"
+    post = "scroll-to-link"
+    weight = 1
+[[menu.desktop]]
+    identifier = "About West"
+    name = "About West"
+    url = "#revitalizing-west"
+    post = "scroll-to-link"
+    weight = 2
+[[menu.desktop]]
+    identifier = "Contact Us"
+    name = "Contact Us"
+    url = "#contact-west"
+    post = "scroll-to-link"
+    weight = 3
+[[menu.mobile]]
+    identifier = "Opportunities"
+    name = "Opportunities"
+    url = "#history-of-west"
+    post = "scroll-to-link"
+    weight = 1
+[[menu.mobile]]
+    identifier = "About West"
+    name = "About West"
+    url = "#revitalizing-west"
+    post = "scroll-to-link"
+    weight = 2
+[[menu.mobile]]
+    identifier = "Contact Us"
+    name = "Contact Us"
+    url = "#contact-west"
+    post = "scroll-to-link"
+    weight = 3
+[params.tracking]
+    cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"
+[params.publishing_settings]
+    site_in_production = true
+
+[mediaTypes]
+  [mediaTypes."text/noExt"]
+    suffixes = ""
+
+[sitemap]
+    filename = "sitepages.xml"
+
+[outputFormats]
+    [outputFormats.sitemapindex]
+        baseName = "sitemapindex"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.sitepages]
+        baseName = "sitepages"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.siteposts]
+        baseName = "siteposts"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+
+[outputs]
+  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS"]
+
+[params.extra_tools]
+    algolia_search = false
+    font_awesome = true
+    floating_header = true
+
+[markup.goldmark.renderer]
+unsafe= true

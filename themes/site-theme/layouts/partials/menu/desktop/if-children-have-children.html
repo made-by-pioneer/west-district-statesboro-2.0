@@ -1,0 +1,27 @@
+{{ if .HasChildren }}
+    {{ $dropdownName := .Name }}
+    {{ partial "utilities/dropdownCSS.html" (dict "context" . "Name" $dropdownName) }}
+    <div id="{{ .Name | urlize }}-dropdown" class="w-48 relative border border-white p-2 select-none text-xs text-left hover:cursor-pointer dropdown" onclick="window.location = {{ .URL }};">{{ .Name }}<i class="text-2xs pr-3 absolute right-0 fas fa-angle-right"></i>
+        <ul class="w-56 absolute top-0 ml-48 {{ .Name | urlize }}-dropdown-selection" role="menu">
+            {{ range .Children }}
+                <div class="flex flex-wrap select-none border border-white p-2">
+                    <a href="{{.URL}}" class="text-2xs menu-item">{{ .Name }}</a>
+                </div>
+            {{ end }}
+            {{ if .Post }}
+                {{ partial "utilities/dropdownHoverScript.html" (dict "context" . "Name" $dropdownName) }}
+            {{ else }}
+                {{ partial "utilities/dropdownClickScript.html" (dict "context" . "Name" $dropdownName) }}
+            {{ end }}
+        </ul>
+    </div>
+    {{ if .Post }}
+        {{ partial "utilities/dropdownHoverScript.html" (dict "context" . "Name" $dropdownName) }}
+    {{ else }}
+        {{ partial "utilities/dropdownClickScript.html" (dict "context" . "Name" $dropdownName) }}
+    {{ end }}
+{{ else }}
+    <div class="w-40 border border-white p-2 leading-tight select-none text-xs text-left">
+        <a href="{{.URL}}" class="menu-item">{{ .Name }}</a>
+    </div>
+{{ end }}

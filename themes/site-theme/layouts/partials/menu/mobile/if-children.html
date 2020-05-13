@@ -1,0 +1,9 @@
+<div class='w-full text-left text-white hover:text-white opacity-100 hover:opacity-75 text-3xl font-bold pb-8'><a class='text-white no-underline tracking-wide desktop-menu-item'>{{ .Name }}</a>
+    <ul class='w-11/12 mx-auto' role='menu'>
+        {{ range .Children }}
+            <li>
+                <a href='{{ .URL }}' class='text-xl opacity-75 text-white no-underline menu-item'>{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</div>

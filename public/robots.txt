@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /
+
+
+Sitemap: https://gz-default.netlify.com/sitemapindex.xml

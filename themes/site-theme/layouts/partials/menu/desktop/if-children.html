@@ -1,0 +1,18 @@
+{{ $dropdownName := .Name }}
+{{ partial "utilities/dropdownCSS.html" (dict "context" . "Name" $dropdownName) }}
+<div id="{{ .Name | urlize }}-dropdown" class="relative inline-flex select-none dropdown">
+    <a href="{{ if .Post }}{{.URL}}{{ else }}#{{ end }}" class="pr-8 desktop-menu-item" role="button">
+        {{ .Pre }}
+        <span>{{ .Name }}</span><i class="text-2xs pl-1 fas fa-angle-down"></i>
+    </a>
+    <ul class="z-50 pt-1 {{ .Name | urlize }}-dropdown-selection" role="menu">
+        {{ range .Children }}
+            {{ partial "menu/desktop/if-children-have-children.html" . }}
+        {{ end }}
+    </ul>
+</div>
+{{ if .Post }}
+    {{ partial "utilities/dropdownHoverScript.html" (dict "context" . "Name" $dropdownName) }}
+{{ else }}
+    {{ partial "utilities/dropdownClickScript.html" (dict "context" . "Name" $dropdownName) }}
+{{ end }}

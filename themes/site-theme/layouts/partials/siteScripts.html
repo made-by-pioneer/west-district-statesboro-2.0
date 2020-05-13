@@ -1,0 +1,60 @@
+{{ $script := .Site.Data.webpack_assets.app }}
+{{ with $script.js }}
+  <script defer src="{{ absURL (printf "%s%s" "/dist/" .) }}"></script>
+{{ end }}
+
+{{ if eq .Site.Params.extra_tools.floating_header true }}
+<script>
+const header = document.querySelector(".header-container")
+let computedStyle = getComputedStyle(header);
+let headerBoxHeight = computedStyle.height
+const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
+const addHeaderFloat = () => header.classList.add("fixed", "z-20", "w-full", "bg-white", "shadow-lg", "header-fixed");
+const addHeaderHeightFix = () => headerHeightFix.setAttribute("style", "height:" + headerBoxHeight);
+const headerFloatFontColor = () => header.classList.remove("text-white");
+const removeHeaderFloat = () => header.classList.remove("fixed", "z-20", "w-full", "bg-white", "shadow-lg", "header-fixed");
+const removeHeaderHeightFix = () => headerHeightFix.setAttribute("style", "height:0px");
+const removeHeaderFloatFontColor = () => header.classList.add("text-white");
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function(){ 
+   let st = window.pageYOffset || document.documentElement.scrollTop; 
+   if (st > lastScrollTop){
+     header.style.top=-headerBoxHeight.replace("px", "") + "px"
+   }
+   else if (st === 0){
+     removeHeaderFloat(), removeHeaderHeightFix(), removeHeaderFloatFontColor()
+   }
+   else {
+     addHeaderFloat(), addHeaderHeightFix(), headerFloatFontColor(),
+     header.style.top=0 + "px"
+   }
+   lastScrollTop = st <= 0 ? 0 : st;
+}, false);
+</script>
+{{ else }}
+{{ end }}
+
+<script>
+function openModal() {
+  event.preventDefault();
+  event.stopPropagation();
+}
+
+function closeModal() {
+  event.preventDefault();
+  event.stopPropagation();
+}
+
+// close modal on mobile menu link click
+let mobileMenuLinks = document.querySelectorAll(".scroll");
+for (let i = 0; i < mobileMenuLinks.length; i++) {
+  let linksContainer = mobileClose[i];
+  let linkToScroll = linksContainer.href;
+  linksContainer.addEventListener('click', function() { 
+  MicroModal.close('mobile-menu');
+  location.href = linkToScroll
+ }, false);
+}
+// END close modal on mobile menu link click
+</script>

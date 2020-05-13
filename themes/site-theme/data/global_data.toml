@@ -1,0 +1,24 @@
+[meta]
+description = "This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission."
+[contact_numbers]
+phone = "555.555.5555"
+fax = "555.555.5555"
+[logos]
+footer_logo = "/pageimg/logo.png"
+logo = "https://res.cloudinary.com/pioneer-design/image/upload/v1588728153/West%20District%20Statesboro/WestDistrict.White_vfi2lf.svg"
+mobile_logo = "/pageimg/logo.png"
+[address]
+city = "Statesboro"
+state = "GA"
+street = "91 South College Street"
+zip = 30458
+[email]
+primary = "example@example.com"
+[tracking]
+google_analytics = "UA-121813241-2"
+[social]
+facebook = "https://www.facebook.com/westdistrictstatesboro/"
+insta = "https://www.instagram.com/westdistrictstatesboro/?hl=en"
+linkedin = ""
+youtube = ""
+inst_access = "8201811526.49edd95.19e9f622f23f4a63a26e96640ae96f22"

@@ -1,0 +1,23 @@
+<style>
+.header-container {
+  transition: .3s;
+}
+</style>
+
+<div id="header-functions" class="">
+  {{ if eq .Site.Params.extra_tools.floating_header true }}
+  <div id="headerFloatingHeightFix" class="" ></div>
+  {{ else }}
+  {{ end }}
+  
+  <section id="header" class="text-white z-50 header-container">
+    <div class="flex flex-wrap items-center h-32 lg:h-40 select-none mx-auto py-4 px-10 md:px-12 lg:px-32 z-50 header-box">
+      <div id="logo" class="w-3/4 sm:w-2/3 md:w-1/5 text-2xl xs:text-3xl sm:text-4xl md:text-4xl py-1 z-50">
+        <a id="logo-text" href="/" class="font-ibm-mono font-bold text-left">
+          <img class="w-20" src="{{ .Site.Data.global_data.logos.logo }}">
+        </a>
+      </div>
+      {{ partial "siteNavi.html" . }}
+    </div>
+  </section>
+</div>

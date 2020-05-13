@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "flickity/css/flickity.css";
+
+@font-face {
+  font-family: Neutra2Text_bold;
+  src: url("/fonts/Neutra2Text_bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Neutra2Text_book;
+  src: url("/fonts/Neutra2Text_book.woff") format("woff");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  
+}
+
+a {
+  transition: .2s;
+}
+
+.mobile-menu-toggle {margin-top: 0px !important;}
+
+.mobile-menu {
+  position:absolute;
+  width:100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: -570px;
+  height: 450px;
+  transition: .5s;
+}
+
+.mobile-menu-button button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.desktop-menu {
+  display:none;
+}
+
+@media screen and (min-width:768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+  .desktop-menu {
+    display:block;
+  }
+}
+
+/* Elevator css */
+
+.elevator-button {
+  position: fixed;
+  font-size: 30px;
+  right: 5%;
+  bottom: 10%;
+  transition: .2s;
+}
+
+.hidegotoTop {
+  right: -100px !important;
+  transition: .2s;
+}
+
+.elevator-button:hover {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+/* default backgrounds */
+
+#thank-you {
+  background-image: url("{{ .Site.Params.utility_images.thank_you_background }}");
+  background-size: auto;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,51 @@
+<style>
+  footer {
+    background-color: #333333;
+  }
+</style>
+
+<footer class="flex flex-wrap items-start text-white py-20 lg:py-0">
+  <div class="flex flex-wrap items-start w-4/5 font-p22 max-w-8xl mx-auto">
+    <div class="flex flex-wrap items-center w-full text-center lg:text-left">
+        <div class="w-full lg:w-1/3 pb-8 lg:pb-0">
+          <p class='font-neu-book text-xs leading-snug'>&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}, All Rights Reserved.</p>
+        </div>
+        <div class="flex flex-wrap w-full lg:w-1/3 mx-auto text-center pb-8 lg:pb-0">
+          <div class="flex flex-wrap w-full text-center h-24">
+              <script>
+                  function hover(element) {
+              element.setAttribute('src', 'https://res.cloudinary.com/pioneer-design/image/upload/v1575321344/Georgia%20Technologies/MadebyPioneer.Red_wtpcxg.svg');
+              }
+              
+              function unhover(element) {
+              element.setAttribute('src', 'https://res.cloudinary.com/pioneer-design/image/upload/v1575321598/Georgia%20Technologies/Dark_kvyiav.svg');
+              }
+              </script>
+              <a class="flex flex-wrap w-full" target="_blank" href="http://madebypioneer.com">
+              <img class="flex flex-wrap mx-auto" src="https://res.cloudinary.com/pioneer-design/image/upload/v1575321598/Georgia%20Technologies/Dark_kvyiav.svg" width="60px" height="30px" onmouseover="hover(this);" onmouseout="unhover(this);">
+              </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 lg:text-right mx-auto pb-8 lg:pb-0">
+          <div class="w-full mx-auto text-white text-lg">
+            <a href="{{ .Site.Data.global_data.social.insta }}" target="_blank">
+              <i class="p-3 fab fa-instagram"></i>
+            </a>
+            <a href="{{ .Site.Data.global_data.social.facebook }}" target="_blank">
+              <i class="p-3 fab fa-facebook-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+{{ if eq .Site.Params.extra_tools.elevatorJS true }}
+
+<div id="go-to-top-button">
+  <div class="elevator-button hidegotoTop">
+      <i class="fas fa-arrow-circle-up"></i>
+  </div>
+</div>
+
+{{ else }}{{ end }}
