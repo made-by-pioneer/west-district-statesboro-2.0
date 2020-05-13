@@ -173,7 +173,7 @@
             {{ with $inst.data }}
             {{ range last 6 $inst.data }}
                 <a href="{{ .link }}" target="_blank" class="w-full">
-                    <img class="w-full" data-src="{{ .images.standard_resolution.url }}" alt="{{ .caption.text }}">
+                    <img class="w-full" src="{{ .images.standard_resolution.url }}" alt="{{ .caption.text }}">
                 </a>
             {{ end }}
         {{ end }}
