@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImagesBk;    
 
   if ("IntersectionObserver" in window) {
-    lazyloadImagesBk = document.querySelectorAll(".lazy");
+    lazyloadImagesBk = document.querySelectorAll(".lzy-bk");
     var imageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           var image = entry.target;
-          image.classList.remove("lazy");
+          image.classList.remove("lzy-bk");
           imageObserver.unobserve(image);
         }
       });
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {  
     var lazyloadThrottleTimeout;
-    lazyloadImagesBk = document.querySelectorAll(".lazy");
+    lazyloadImagesBk = document.querySelectorAll(".lzy-bk");
     
     function lazyload () {
       if(lazyloadThrottleTimeout) {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImagesImg;    
 
   if ("IntersectionObserver" in window) {
-    lazyloadImagesImg = document.querySelectorAll(".lazy");
+    lazyloadImagesImg = document.querySelectorAll(".lzy-img");
     var imageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {  
     var lazyloadThrottleTimeout;
-    lazyloadImagesImg = document.querySelectorAll(".lazy");
+    lazyloadImagesImg = document.querySelectorAll(".lzy-img");
     
     function lazyload () {
       if(lazyloadThrottleTimeout) {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyloadImagesImg.forEach(function(img) {
             if(img.offsetTop < (window.innerHeight + scrollTop)) {
               img.src = img.dataset.src;
-              img.classList.remove('lazy');
+              img.classList.remove('lzy-img');
             }
         });
         if(lazyloadImagesImg.length == 0) { 

@@ -58,3 +58,23 @@ for (let i = 0; i < mobileMenuLinks.length; i++) {
 }
 // END close modal on mobile menu link click
 </script>
+
+<!-- check ie11 status for lazy loading images -->
+<script>
+let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+if (isIE11 === false) {
+  let lazyBack = document.querySelectorAll("#lzy-bk");
+  for (i = 0; i < lazyBack.length; ++i) {
+    lazyBack[i].classList.add("lazy");
+  }
+  let lazyImg = document.querySelectorAll("#lzy-img");
+  for (i = 0; i < lazyImg.length; ++i) {
+    lazyImg[i].classList.add("lazy");
+    if(lazyImg[i].getAttribute('src')) {
+      lazyImg[i].setAttribute('data-src',lazyImg[i].getAttribute('src'));
+      lazyImg[i].removeAttribute('src'); //use only if you need to remove data-src attribute after setting src
+    }
+  }
+}
+</script>
+<!-- END check ie11 status for lazy loading images -->
