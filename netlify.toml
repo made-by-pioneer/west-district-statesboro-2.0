@@ -11,8 +11,8 @@ HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.61.0"
 
 [[redirects]]
-  from = ""
-  to = ""
+  from = "https://west-district-statesboro.netlify.app/*"
+  to = "https://westdistrictstatesboro.com/:splat"
   status = 301
   force = true
 

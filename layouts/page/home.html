@@ -105,6 +105,9 @@
 <div class="flex flex-wrap w-full bg-contain bg-bottom bg-no-repeat contact-west">
     <div id="contact-west" class="flex flex-wrap w-5/6 md:w-2/3 max-w-6xl mx-auto pt-24 pb-24">
         <div class="w-full md:w-1/2 bg-contain bg-no-repeat md:pb-48 map-to-west-district">
+            <noscript>
+                <h6 class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>Enable Javascript to see a map to the West District Statesboro</h6>
+            </noscript>
         <iframe class="google-map pb-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.9675622993!2d-81.78960548583824!3d32.44680300805819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fa40a8fa50439f%3A0x51654157afb5085b!2s91+S+College+St%2C+Statesboro%2C+GA+30458!5e0!3m2!1sen!2sus!4v1538203040929" width="100%" height="347" frameborder="0" style="border:0" allowfullscreen></iframe> 
         <h6 class='{{ partial "gCSS/type/subtitle.txt"}} pb-1'>GET DIRECTIONS</h6>
         <p class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>{{ .Site.Data.global_data.address.street }}, {{ .Site.Data.global_data.address.city }}, {{ .Site.Data.global_data.address.state }}. {{ .Site.Data.global_data.address.zip }}</p>
@@ -160,6 +163,9 @@
                 Follow us
             </a>
         </div>
+        <noscript>
+            <h6 class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>Enable Javascript to see a gallery of our most recent Instagram posts.</h6>
+        </noscript>
         <div class="w-full md:w-1/2 mx-auto main-carousel" data-flickity='{}'>
             {{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent?access_token=" }}
             {{ $id := .Site.Data.global_data.social.inst_access }}
