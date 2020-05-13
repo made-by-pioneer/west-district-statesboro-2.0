@@ -65,11 +65,11 @@ let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 if (isIE11 === false) {
   let lazyBack = document.querySelectorAll("#lzy-bk");
   for (i = 0; i < lazyBack.length; ++i) {
-    lazyBack[i].classList.add("lazy");
+    lazyBack[i].classList.add("lzy-bk");
   }
   let lazyImg = document.querySelectorAll("#lzy-img");
   for (i = 0; i < lazyImg.length; ++i) {
-    lazyImg[i].classList.add("lazy");
+    lazyImg[i].classList.add("lzy-img");
     if(lazyImg[i].getAttribute('src')) {
       lazyImg[i].setAttribute('data-src',lazyImg[i].getAttribute('src'));
       lazyImg[i].removeAttribute('src'); //use only if you need to remove data-src attribute after setting src
