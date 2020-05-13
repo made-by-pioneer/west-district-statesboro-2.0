@@ -6,7 +6,7 @@
 }
 </style>
 
-<div id="lzy-bk" class="flex flex-wrap bg-cover bg-bottom bg-no-repeat -mt-40 py-48 lzy-bk hero-section">
+<div id="lzy-bk" class="flex flex-wrap bg-cover bg-bottom bg-no-repeat -mt-40 py-48 hero-section">
     <div class="flex flex-wrap w-5/6 md:w-2/3 max-w-5xl mx-auto">
         <div class="w-full lg:w-7/12">
                 <h1 class='{{ partial "gCSS/type/heading.txt"}} text-white pb-4'>{{ .Params.hero.title }}</h1>
@@ -24,7 +24,7 @@
             background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.history_of_west.img }}")
         }
     </style>
-    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 lzy-bk history-of-west-district">
+    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 history-of-west-district">
         
     </div>
     <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pl-12">
@@ -51,7 +51,7 @@
             background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.office_space_section.img }}")
         }
     </style>
-    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 lzy-bk unique-office-spaces">
+    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 unique-office-spaces">
         
     </div>
 </div>
@@ -62,7 +62,7 @@
             background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.loft_living_section.img }}")
         }
     </style>
-    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 lzy-bk downtown-loft-living">
+    <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 downtown-loft-living">
         
     </div>
     <div class="w-full md:w-1/2 pt-12 md:pt-0 md:pl-12">
@@ -90,7 +90,7 @@
                 background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.revitalizing_section.img }}")
             }
         </style>
-        <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 lzy-bk revitalizing-west">
+        <div id="lzy-bk" class="w-full md:w-1/2 bg-cover md:bg-contain bg-center md:bg-top bg-no-repeat py-24 sm:py-48 revitalizing-west">
             
         </div>
     </div>
@@ -102,7 +102,7 @@
     }
 </style>
 
-<div id="lzy-bk" class="flex flex-wrap w-full bg-contain bg-bottom bg-no-repeat lzy-bk contact-west">
+<div id="lzy-bk" class="flex flex-wrap w-full bg-contain bg-bottom bg-no-repeat contact-west">
     <div id="contact-west" class="flex flex-wrap w-5/6 md:w-2/3 max-w-6xl mx-auto pt-24 pb-24">
         <div class="w-full md:w-1/2 bg-contain bg-no-repeat md:pb-48 map-to-west-district">
             <noscript>
@@ -171,7 +171,7 @@
             {{ $id := .Site.Data.global_data.social.inst_access }}
             {{ $inst := getJSON $urlPre $id }}
             {{ with $inst.data }}
-            {{ range last 6 $inst.data }}
+            {{ range last 4 $inst.data }}
                 <a href="{{ .link }}" target="_blank" class="w-full">
                     <img class="w-full" src="{{ .images.standard_resolution.url }}" alt="{{ .caption.text }}">
                 </a>

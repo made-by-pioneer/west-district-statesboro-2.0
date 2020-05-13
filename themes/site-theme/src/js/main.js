@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyloadImagesBk.forEach(function(img) {
             if(img.offsetTop < (window.innerHeight + scrollTop)) {
               img.src = img.dataset.src;
-              img.classList.remove('lazy');
+              img.classList.remove('lzy-bk');
             }
         });
         if(lazyloadImagesBk.length == 0) { 
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (entry.isIntersecting) {
           var image = entry.target;
           image.src = image.dataset.src;
-          image.classList.remove("lazy");
+          image.classList.remove("lzy-img");
           imageObserver.unobserve(image);
         }
       });
