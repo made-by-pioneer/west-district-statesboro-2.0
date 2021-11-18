@@ -4,6 +4,18 @@
 .hero-section {
     background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.hero.background_img }}");
 }
+.tns-item {
+        margin-top: 32px;
+        width: 100% !important;
+}
+.eapps-instagram-feed-posts-slider-inner {
+    width: 100% !important;
+}
+@media (min-width: 992px){
+    .tns-item {
+        margin-top: 0px;
+    }
+}
 </style>
 
 <div id="lzy-bk" class="flex flex-wrap bg-cover bg-bottom bg-no-repeat -mt-40 py-48 hero-section">
@@ -166,17 +178,9 @@
         <noscript>
             <h6 class='{{ partial "gCSS/type/paragraph.txt"}} pb-8'>Enable Javascript to see a gallery of our most recent Instagram posts.</h6>
         </noscript>
-        <div class="w-full md:w-1/2 mx-auto main-carousel" data-flickity='{}'>
-            {{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent?access_token=" }}
-            {{ $id := .Site.Data.global_data.social.inst_access }}
-            {{ $inst := getJSON $urlPre $id }}
-            {{ with $inst.data }}
-            {{ range last 4 $inst.data }}
-                <a href="{{ .link }}" target="_blank" class="w-full">
-                    <img class="w-full" src="{{ .images.standard_resolution.url }}" alt="{{ .caption.text }}">
-                </a>
-            {{ end }}
-        {{ end }}
+        <div class="w-full md:w-1/2 mx-auto main-carousel">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-97a2fce4-1080-4b27-be88-e7ac6c506bd5"></div>
         </div>
     </div>
 </div>
