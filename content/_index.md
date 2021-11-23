@@ -27,7 +27,7 @@ background_img = "/v1588728153/West%20District%20Statesboro/west-district-in-sta
 button_link = "#contact-west"
 button_text = "Let's go west"
 paragraph_text = "With restaurants, office space, lofts, parking, and an open yard for monthly activites, West District is primed to make downtown Statesboro the place you'll want to live, work, and play."
-title = "Be a part of what's rising in downtown Statesbor"
+title = "Be a part of what's rising in downtown Statesboro"
 [history_of_west]
 button_link = "#contact-west"
 button_text = "Tell me more"
