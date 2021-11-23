@@ -43,7 +43,7 @@ title = "Visit Us on Instagram"
 [loft_living_section]
 button_link = "#contact-west"
 button_text = "Tell me more"
-img = "https://res.cloudinary.com/pioneer-design/image/upload/v1637246373/West%20District%20Statesboro/Copy_of_DSC07222-2_jsbaea.jpg"
+img = "/v1637246373/West%20District%20Statesboro/Copy_of_DSC07222-2_jsbaea.jpg"
 paragraph_text = "Living in The Lofts at West will put you in walking distance to local boutiques, dining, weekend farmer’s markets, and activities. The Lofts at West will feature open floor plans with reclaimed wooden beams and brick walls with all of the modern amenities. Each loft will have its own personality with double door balconies and private entrances."
 subtitle = "DOWNTOWN LOFT LIVING"
 title = "Live"
