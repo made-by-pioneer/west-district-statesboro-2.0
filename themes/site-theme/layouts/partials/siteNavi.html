@@ -56,7 +56,7 @@
     {{ if .HasChildren }}
       {{ partial "menu/desktop/if-children.html" . }}
     {{ else }}
-      <a {{if .Pre}}target="_blank"{{else}}{{end}} class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}} font-neu-bold text-sm xl:text-base hover:text-color-f04937 pr-8 xl:pr-12 select-none scroll desktop-menu-item" href="{{.URL}}">{{ .Name }}</a>
+      <a {{if .Pre}}target="_blank"{{else}}{{end}} class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}} font-neu-bold text-sm xl:text-base hover:text-color-f04937 pr-8 xl:pr-12 select-none desktop-menu-item" href="{{.URL}}">{{ .Name }}</a>
     {{ end }}
   {{ end }}
 </div>

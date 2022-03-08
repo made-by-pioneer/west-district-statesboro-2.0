@@ -4,41 +4,38 @@ theme = "site-theme"
 title = "West District Statesboro"
 enableRobotsTXT = true
 
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
 [[menu.desktop]]
     identifier = "Opportunities"
     name = "Opportunities"
-    url = "#history-of-west"
-    post = "scroll-to-link"
+    url = "/#history-of-west"
     weight = 1
 [[menu.desktop]]
     identifier = "About West"
     name = "About West"
-    url = "#revitalizing-west"
-    post = "scroll-to-link"
+    url = "/#revitalizing-west"
     weight = 2
 [[menu.desktop]]
     identifier = "Contact Us"
     name = "Contact Us"
-    url = "#contact-west"
-    post = "scroll-to-link"
+    url = "/#contact-west"
     weight = 3
 [[menu.mobile]]
     identifier = "Opportunities"
     name = "Opportunities"
-    url = "#history-of-west"
-    post = "scroll-to-link"
+    url = "/#history-of-west"
     weight = 1
 [[menu.mobile]]
     identifier = "About West"
     name = "About West"
-    url = "#revitalizing-west"
-    post = "scroll-to-link"
+    url = "/#revitalizing-west"
     weight = 2
 [[menu.mobile]]
     identifier = "Contact Us"
     name = "Contact Us"
-    url = "#contact-west"
-    post = "scroll-to-link"
+    url = "/#contact-west"
     weight = 3
 [params.tracking]
     cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"

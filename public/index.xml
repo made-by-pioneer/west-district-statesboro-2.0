@@ -6,27 +6,38 @@
     <description>Recent content in Home on West District Statesboro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://westdistrictstatesboro.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate><atom:link href="https://westdistrictstatesboro.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Search</title>
-      <link>https://westdistrictstatesboro.com/search/</link>
-      <pubDate>Sun, 19 May 2019 05:00:00 +0000</pubDate>
+      <title>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </title>
+      <link>https://westdistrictstatesboro.com/blog/testing-post/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://westdistrictstatesboro.com/search/</guid>
-      <description></description>
+      <guid>https://westdistrictstatesboro.com/blog/testing-post/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum is simply dummy text of the printing and typesetting industry.</description>
     </item>
     
     <item>
-      <title>Examples of development elements</title>
-      <link>https://westdistrictstatesboro.com/devele/</link>
+      <title>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </title>
+      <link>https://westdistrictstatesboro.com/blog/testing-post/</link>
       <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://westdistrictstatesboro.com/devele/</guid>
-      <description></description>
+      <guid>https://westdistrictstatesboro.com/blog/testing-post/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum is simply dummy text of the printing and typesetting industry.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </title>
+      <link>https://westdistrictstatesboro.com/blog/testing-post/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://westdistrictstatesboro.com/blog/testing-post/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum is simply dummy text of the printing and typesetting industry.</description>
     </item>
     
     <item>

@@ -1,0 +1,221 @@
+{{ define "main" }}
+
+{{ $posts := (where .Site.Pages "Params.page_status" "blog-single") }}
+{{ $postCount := len $posts }}
+
+<div class="w-full">
+    <h6 class='{{ partial "gCSS/type/heading.txt"}} text-5xl text-color-f04937 text-center pt-5 pb-12'>Blog</h6>
+</div>
+<div id="blog-pages" class="pb-32">
+    <div class="flex flex-wrap max-w-7xl mx-auto px-4 blog-page" page-index='0'>
+        {{ range first 25 (where .Site.Pages "Params.page_status" "blog-single") }}
+            <div class="w-full sm:w-1/2 lg:w-1/3 blog-single">
+                <style>
+                    .blog-img-{{ .File.UniqueID }} {
+                        background-image: url('{{ .Params.feat_img }}');
+                    }
+                </style>
+                <div class="pb-12 px-4 md:px-8">
+                    <a href="/blog/{{ .Slug }}">
+                        <div class="w-full h-56 bg-cover bg-no-repeat blog-img-{{ .File.UniqueID }}">
+    
+                        </div>
+                        <h2 class="font-neu-bold text-2xl md:text-3xl leading-tight pt-4 pb-3">{{ .Title | truncate 100 }}</h2>
+                        <p class="font-neu-book text-lg leading-snug pb-4">{{ .Params.excerpt | truncate 100 }}</p>
+                        <button class='{{ partial "gCSS/button/default.txt"}}'>
+                            Read
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ if gt $postCount 25 }}
+    <div class="flex flex-wrap max-w-7xl mx-auto px-4 hidden blog-page" page-index='1'>
+        {{ range first 25 (after 25 (where .Site.Pages "Params.page_status" "blog-single")) }}
+            <div class="w-full sm:w-1/2 lg:w-1/3 blog-single">
+                <style>
+                    .blog-img-{{ .File.UniqueID }} {
+                        background-image: url('{{ .Params.feat_img }}');
+                    }
+                </style>
+                <div class="pb-12 px-4 md:px-8">
+                    <a href="/blog/{{ .Slug }}">
+                        <div class="w-full h-56 bg-cover bg-no-repeat blog-img-{{ .File.UniqueID }}">
+    
+                        </div>
+                        <h2 class="font-neu-bold text-2xl md:text-3xl leading-tight pt-4 pb-3">{{ .Title | truncate 100 }}</h2>
+                        <p class="font-neu-book text-lg leading-snug pb-4">{{ .Params.excerpt | truncate 100 }}</p>
+                        <button class='{{ partial "gCSS/button/default.txt"}}'>
+                            Read
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ if gt $postCount 50 }}
+    <div class="flex flex-wrap max-w-7xl mx-auto px-4 hidden blog-page" page-index='2'>
+        {{ range first 25 (after 50 (where .Site.Pages "Params.page_status" "blog-single")) }}
+            <div class="w-full sm:w-1/2 lg:w-1/3 blog-single">
+                <style>
+                    .blog-img-{{ .File.UniqueID }} {
+                        background-image: url('{{ .Params.feat_img }}');
+                    }
+                </style>
+                <div class="pb-12 px-4 md:px-8">
+                    <a href="/blog/{{ .Slug }}">
+                        <div class="w-full h-56 bg-cover bg-no-repeat blog-img-{{ .File.UniqueID }}">
+    
+                        </div>
+                        <h2 class="font-neu-bold text-2xl md:text-3xl leading-tight pt-4 pb-3">{{ .Title | truncate 100 }}</h2>
+                        <p class="font-neu-book text-lg leading-snug pb-4">{{ .Params.excerpt | truncate 100 }}</p>
+                        <button class='{{ partial "gCSS/button/default.txt"}}'>
+                            Read
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ if gt $postCount 75 }}
+    <div class="flex flex-wrap max-w-7xl mx-auto px-4 hidden blog-page" page-index='3'>
+        {{ range first 25 (after 75 (where .Site.Pages "Params.page_status" "blog-single")) }}
+            <div class="w-full sm:w-1/2 lg:w-1/3 blog-single">
+                <style>
+                    .blog-img-{{ .File.UniqueID }} {
+                        background-image: url('{{ .Params.feat_img }}');
+                    }
+                </style>
+                <div class="pb-12 px-4 md:px-8">
+                    <a href="/blog/{{ .Slug }}">
+                        <div class="w-full h-56 bg-cover bg-no-repeat blog-img-{{ .File.UniqueID }}">
+    
+                        </div>
+                        <h2 class="font-neu-bold text-2xl md:text-3xl leading-tight pt-4 pb-3">{{ .Title | truncate 100 }}</h2>
+                        <p class="font-neu-book text-lg leading-snug pb-4">{{ .Params.excerpt | truncate 100 }}</p>
+                        <button class='{{ partial "gCSS/button/default.txt"}}'>
+                            Read
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ if gt $postCount 100 }}
+    <div class="flex flex-wrap max-w-7xl mx-auto px-4 hidden blog-page" page-index='4'>
+        {{ range first 25 (after 100 (where .Site.Pages "Params.page_status" "blog-single")) }}
+            <div class="w-full sm:w-1/2 lg:w-1/3 blog-single">
+                <style>
+                    .blog-img-{{ .File.UniqueID }} {
+                        background-image: url('{{ .Params.feat_img }}');
+                    }
+                </style>
+                <div class="pb-12 px-4 md:px-8">
+                    <a href="/blog/{{ .Slug }}">
+                        <div class="w-full h-56 bg-cover bg-no-repeat blog-img-{{ .File.UniqueID }}">
+    
+                        </div>
+                        <h2 class="font-neu-bold text-2xl md:text-3xl leading-tight pt-4 pb-3">{{ .Title | truncate 100 }}</h2>
+                        <p class="font-neu-book text-lg leading-snug pb-4">{{ .Params.excerpt | truncate 100 }}</p>
+                        <button class='{{ partial "gCSS/button/default.txt"}}'>
+                            Read
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+<div id="page-navigation" class="hidden flex w-full max-w-7xl justify-between mx-auto p-12">
+    <a href="#header-functions" id="prev-button" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+        Previous Page
+    </a>
+    <a href="#header-functions" id="next-button" class='{{ partial "gCSS/button/default.txt"}} scroll'>
+        Next Page
+    </a>
+</div>
+
+<script>
+let pageIndex = 0
+let pageLastIndex = 0
+const blogPages = document.getElementById('blog-pages');
+const pageNavi = document.getElementById('page-navigation');
+let blogPage = document.querySelectorAll('.blog-page');
+let blogSingles = document.querySelectorAll('.blog-single');
+let prevButton = document.getElementById('prev-button');
+let nextButton = document.getElementById('next-button');
+
+console.log(blogPage.length);
+
+prevButton.style.visibility = 'hidden';
+
+for (let i = 0; i < blogPage.length; i++) {
+    pageLastIndex = blogPage[i].getAttribute('page-index');
+}
+
+if (blogSingles.length > 25) {
+    pageNavi.classList.remove('hidden');
+}
+
+function updatePrevButton() {
+    if (pageIndex !== 0) {
+        prevButton.style.visibility = 'visible';
+    } else {
+        prevButton.style.visibility = 'hidden';
+    }
+}
+
+function updateNextButton() {
+    if (pageLastIndex == pageIndex) {
+        nextButton.style.visibility = 'hidden';
+    } else {
+        nextButton.style.visibility = 'visible';
+    }
+}
+
+function incrementPageIndex() {
+    if (pageLastIndex !== pageIndex) {
+        pageIndex++
+    } else {};
+}
+
+function decrementPageIndex() {
+    if (pageIndex !== 0) {
+        pageIndex--
+    } else {};
+}
+
+function toggleBlogPage() {
+    for (let i = 0; i < blogPage.length; i++) {
+        blogPage[i].classList.add('hidden');
+        if (blogPage[i].getAttribute('page-index') == pageIndex) {
+            blogPage[i].classList.remove('hidden');
+        } else {
+            
+        }
+    }
+}
+
+nextButton.addEventListener('click', function(){
+    incrementPageIndex();
+    updatePrevButton();
+    updateNextButton();
+    toggleBlogPage();
+});
+
+prevButton.addEventListener('click', function(){
+    decrementPageIndex();
+    updatePrevButton();
+    updateNextButton();
+    toggleBlogPage();
+});
+
+</script>
+
+{{ end }}

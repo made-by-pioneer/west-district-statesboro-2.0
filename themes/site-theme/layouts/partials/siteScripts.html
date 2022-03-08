@@ -14,7 +14,9 @@ const addHeaderHeightFix = () => headerHeightFix.setAttribute("style", "height:"
 const headerFloatFontColor = () => header.classList.remove("text-white");
 const removeHeaderFloat = () => header.classList.remove("fixed", "z-20", "w-full", "bg-white", "shadow-lg", "header-fixed");
 const removeHeaderHeightFix = () => headerHeightFix.setAttribute("style", "height:0px");
-const removeHeaderFloatFontColor = () => header.classList.add("text-white");
+if (location.href == 'https://westdistrictstatesboro.com/') {
+  const removeHeaderFloatFontColor = () => header.classList.add("text-white");
+}
 
 let lastScrollTop = 0;
 window.addEventListener("scroll", function(){ 

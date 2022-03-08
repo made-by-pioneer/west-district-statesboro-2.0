@@ -2,12 +2,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://westdistrictstatesboro.com/search/</loc>
-    <lastmod>2019-05-19T05:00:00+00:00</lastmod>
+    <loc>https://westdistrictstatesboro.com/blog/</loc>
+    <lastmod>2019-04-24T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://westdistrictstatesboro.com/</loc>
+    <lastmod>2019-04-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://westdistrictstatesboro.com/blog/testing-post/</loc>
+    <lastmod>2019-04-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://westdistrictstatesboro.com/blog/testing-post/</loc>
+    <lastmod>2019-04-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://westdistrictstatesboro.com/blog/testing-post/</loc>
     <lastmod>2019-04-24T05:00:00+00:00</lastmod>
   </url>
   

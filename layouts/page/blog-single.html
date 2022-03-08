@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<style>
+    .feat-img-single {
+        background-image: url('{{ .Params.feat_img }}');
+    }
+    .feat-img-gradient {
+        background-color: #f04937;
+        opacity: 0.7;
+    }
+    .blog-meta {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .blog-content {
+        font-family: 'Neutra2Text_book';
+    }
+    .blog-content h1, .blog-content h2, .blog-content h3 {
+        font-family: 'Neutra2Text_bold';
+    }
+    .blog-content h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .blog-content h2 {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .blog-content h3 {
+        font-size: 32px;
+        line-height: 1;
+    }
+    .blog-content img {
+        margin: auto;
+        padding: 50px 0 50px 0;
+    }
+    .blog-content ol {
+        list-style: decimal;
+        white-space: nowrap;
+    }
+    .blog-content ul {
+        list-style: disc;
+        white-space: nowrap;
+    }
+    .blog-content {
+        white-space: pre-line;
+    }
+</style>
+
+<div class="max-w-8xl mx-auto">
+    <div class="relative w-full bg-cover bg-no-repeat py-48 feat-img-single">
+        <div class="absolute top-0 w-full h-full feat-img-gradient"></div>
+        <div class="max-w-3xl w-full text-center z-20 px-6 blog-meta">
+            <h1 class="font-neu-bold text-2xl md:text-4xl leading-none text-white pb-2">{{ .Title | truncate 200 }}</h1>
+            <ul class="flex flex-wrap justify-center w-full list-none">
+                {{ range .Params.tags }}
+                    <li class="font-neu-book text-base text-white leading-snug pr-2 hover:underline"><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a></li>
+                {{ end }}
+                {{ range .Params.tags }}
+                    <li class="font-neu-book text-base text-white leading-snug pr-2 hover:underline"><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto py-12 px-6 blog-content">
+        {{ .Content | safeHTML }}
+    </div>
+</div>
+
+{{ end }}
