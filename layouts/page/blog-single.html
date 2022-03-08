@@ -45,9 +45,6 @@
         list-style: disc;
         white-space: nowrap;
     }
-    .blog-content {
-        white-space: pre-line;
-    }
 </style>
 
 <div class="max-w-8xl mx-auto">
@@ -65,7 +62,7 @@
             </ul>
         </div>
     </div>
-    <div class="max-w-6xl mx-auto py-12 px-6 blog-content">
+    <div class="max-w-6xl mx-auto py-12 px-6 whitespace-pre-line blog-content">
         {{ .Content | safeHTML }}
     </div>
 </div>
