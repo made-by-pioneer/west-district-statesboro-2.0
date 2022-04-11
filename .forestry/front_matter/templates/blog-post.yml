@@ -27,6 +27,8 @@ fields:
 - type: text
   name: page_status
   label: page_status
+  hidden: true
+  default: blog-single
 - type: text
   name: publish_image
   label: publish_image
