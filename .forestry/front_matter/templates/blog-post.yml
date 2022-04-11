@@ -30,9 +30,6 @@ fields:
   hidden: true
   default: blog-single
 - type: text
-  name: publish_image
-  label: publish_image
-- type: text
   name: meta_description
   label: meta_description
 - type: file
@@ -44,3 +41,8 @@ fields:
 - type: list
   name: tags
   label: tags
+- name: publish_image
+  type: file
+  config:
+    maxSize: 64
+  label: publish_image
