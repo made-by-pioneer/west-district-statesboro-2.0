@@ -13,6 +13,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: blog-single
 - type: text
   name: slug
   label: slug
