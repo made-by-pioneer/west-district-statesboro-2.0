@@ -8,6 +8,8 @@ fields:
 - type: text
   name: type
   label: type
+  hidden: true
+  default: page
 - type: text
   name: layout
   label: layout
