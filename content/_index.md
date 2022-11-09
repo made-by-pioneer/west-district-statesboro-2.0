@@ -15,11 +15,11 @@ title = "Need more information?"
 [contact_section.contact_persons]
 title = "CALL OUR RENTAL DEVELOPMENT TEAM"
 [contact_section.contact_persons.everett_kennedy]
-name = "Everett Kennedy"
-phone_numbers = ["912.682.9045", "912.764.6249"]
+name = ""
+phone_numbers = []
 [contact_section.contact_persons.michael_whitfield]
-name = "Michael Whitfield"
-phone_numbers = ["912.531.7061", "912.764.6249"]
+name = "Josh Whitfield"
+phone_numbers = ["josh@whitfieldsigns.com"]
 [contact_section.map_area]
 title = "GET DIRECTIONS"
 [hero]
