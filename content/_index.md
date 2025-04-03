@@ -19,7 +19,7 @@ name = ""
 phone_numbers = []
 [contact_section.contact_persons.michael_whitfield]
 name = "Josh Whitfield"
-phone_numbers = ["josh@whitfieldsigns.com"]
+phone_numbers = ["josh@whitfieldcompanies.com"]
 [contact_section.map_area]
 title = "GET DIRECTIONS"
 [hero]
