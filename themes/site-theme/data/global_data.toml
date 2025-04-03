@@ -10,7 +10,7 @@ mobile_logo = "/pageimg/logo.png"
 [address]
 city = "Statesboro"
 state = "GA"
-street = "91 South College Street"
+street = "81 S. College Street"
 zip = 30458
 [email]
 primary = "example@example.com"
